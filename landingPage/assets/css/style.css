@@ -1,0 +1,72 @@
+:root{
+  --primary-color: #05062D;
+  --main-bg-color: #ffffff;
+  --gap: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Definindo um tamanho de fonte para o documento */
+html{
+  font-size: 62.5%;
+}
+
+/* Definindo a fonte do body e também seu tamanho */
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+
+/* Definindo a fonte dos títulos */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Definindo o tamanho dos títulos da página */
+h1{
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 5.5rem;
+}
+
+h3{
+  font-size: 5rem;
+}
+
+h4{
+  font-size: 4.5rem;
+}
+
+h5{
+  font-size: 4rem;
+}
+
+h6{
+  font-size: 3.5rem;
+}
+
+/* Definindo uma imagem como background da página */
+.main-bg {
+  background-image: url(/landingPage/assets/img/main-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--main-bg-color);
+}
+
+/* Definindo o tamanho do conteúdo */
+.main-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+/* Definindo o tamanho da seção */
+.section{
+  min-height: 100vh;
+}
