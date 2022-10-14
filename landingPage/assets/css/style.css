@@ -193,14 +193,17 @@ p{
   min-height: 100vh;
 }
 
+/* Definindo a margem do titulo */
 .jobs-title h2{
   margin-bottom: 1rem;
 }
 
+/* Definindo o padding da descrição */
 .jobs-description{
   padding-bottom: 3rem;
 }
 
+/* Definindo o grid da galeria */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -208,6 +211,7 @@ p{
   counter-reset: grid-counter;
 }
 
+/* Definindo o h3 da galeria */
 .grid h3{
   font-size: 3rem;
   position: relative;
@@ -215,6 +219,7 @@ p{
   padding-bottom: 3rem;
 }
 
+/* Estilizando os h3 da seção jobs */
 .grid h3::before{
   counter-increment: grid-counter;
   content: counter(grid-counter);
@@ -226,6 +231,7 @@ p{
   transform: rotate(5deg)
 }
 
+/* Estilizando as imagens da galeria */
 .gallery-img{
   width: 100%;
   max-height: 36rem;
@@ -233,10 +239,17 @@ p{
   overflow: hidden;
 }
 
+/* Adicionando efeito as imagens */
 .gallery-img{
   transition: all 300ms ease-in-out;
 }
 
+/* Adicionando uma margem aos 3 ultimos elementos */
+.gallery-img-4, .gallery-img-5, .gallery-img-6{
+  margin-bottom: 3rem;
+}
+
+/* Adicionando efeito quando o mouse passar por cima das imagens */
 .gallery-img img:hover{
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
