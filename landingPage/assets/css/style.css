@@ -20,6 +20,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 /* Definindo a fonte dos títulos */
@@ -63,7 +64,7 @@ a{
   background-image: url(../img/scattered-forcefields.svg);
   background-size: cover;
   background-position: center center;
-  color: var(--white-color);
+  color: var(--main-bg-color);
 }
 
 .white-bg{
@@ -92,6 +93,11 @@ a{
   border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
+/* Definindo uma altura entre o menu e a página */
+.menu-spacing{
+  height: 6.5rem;
+}
+
 /* Transformando o menu em display flex */
 .menu-content{
   display: flex;
@@ -101,20 +107,24 @@ a{
   padding-bottom: 0;
 }
 
+/* Estilizando o logo da página */
 .menu h1{
   font-size: 3rem;
   color: var(--primary-color);
 }
 
+/* Modificando o link para herdar a cor do pai */
 .menu h1 a {
   color: inherit;
 }
 
+/* Removendo os estilos da lista e transformando em display flex */
 .menu ul {
   list-style: none;
   display: flex;
 }
 
+/* Transformadno os links da lista em display block para que possam receber padding */
 .menu ul li a{
   display: block;
   padding: 2rem;
@@ -123,9 +133,41 @@ a{
   font-weight: bold;
 }
 
+/* Efeito que acontecerá quando passarmos o mouse sobre os itens do menu */
 .menu ul li a:hover{
   background: var(--primary-color);
   color: var(--main-bg-color);
   border-radius: 0.4rem;
   transition: all 800ms ease-in-out;
+}
+
+/* Colocando display grid na seção de introdução */
+.intro-content {
+  position: relative;
+  top: -7rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  align-items: center;
+  height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+/* Estilizando o h2 de sação de introdução */
+
+.intro-content h2{
+  font-size: 6.5rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.intro-img img{
+  max-width: 100%;
+  height: auto;
 }
