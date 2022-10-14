@@ -1,6 +1,7 @@
 :root{
   --primary-color: #05062D;
-  --main-bg-color: #ffffff;
+  --main-bg-color: #FFFFFF;
+  --light-gray-color: #EEEEEE
   --gap: 3rem;
 }
 
@@ -18,6 +19,7 @@ html{
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
+  color: var(--primary-color);
 }
 
 /* Definindo a fonte dos títulos */
@@ -51,12 +53,16 @@ h6{
   font-size: 3.5rem;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Definindo uma imagem como background da página */
 .main-bg {
-  background-image: url(/landingPage/assets/img/main-bg.svg);
+  background-image: url('../img/main-bg.svg');
   background-size: cover;
   background-position: center center;
-  color: var(--main-bg-color);
+  color: var(--white-color);
 }
 
 /* Definindo o tamanho do conteúdo */
@@ -69,4 +75,53 @@ h6{
 /* Definindo o tamanho da seção */
 .section{
   min-height: 100vh;
+}
+
+/* Definindo as configurações do menu de navegação */
+.menu{
+  background: var(--main-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+/* Transformando o menu em display flex */
+.menu-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1{
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a{
+  display: block;
+  padding: 20px;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.menu ul li a:hover{
+  background: var(--primary-color);
+  color: var(--main-bg-color);
+  border-radius: 4px;
+  transition: all 800ms ease-in-out;
 }
