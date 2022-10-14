@@ -13,6 +13,7 @@
 /* Definindo um tamanho de fonte para o documento */
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Definindo a fonte do body e também seu tamanho */
@@ -35,7 +36,10 @@ h1{
 }
 
 h2{
-  font-size: 5.5rem;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 h3{
@@ -58,6 +62,9 @@ a{
   text-decoration: none;
 }
 
+p{
+  margin-bottom: 3rem;
+}
 /* Definindo uma imagem como background da página */
 .main-bg {
   /* background-image: url('../img/main-bg.svg'); */
@@ -69,6 +76,7 @@ a{
 
 .white-bg{
   background: var(--main-bg-color);
+  color: var(--primary-color);
 }
 
 /* Definindo o tamanho do conteúdo */
@@ -90,6 +98,7 @@ a{
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
   border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
@@ -158,16 +167,20 @@ a{
   justify-content: center;
 }
 
-/* Estilizando o h2 de sação de introdução */
-
-.intro-content h2{
-  font-size: 6.5rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
+/* Definindo o tamanho e altura da imagem */
 .intro-img img{
   max-width: 100%;
   height: auto;
 }
+
+/* Estilizando a seção top3 jobs */
+
+.top3-content{
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
