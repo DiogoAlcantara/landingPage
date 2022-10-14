@@ -67,7 +67,7 @@ p{
 }
 /* Definindo uma imagem como background da página */
 .main-bg {
-  background-image: url(../img/sun-tornado.svg);
+  background-image: url(../img/main-bg.svg);
   background-size: cover;
   background-position: center center;
   color: var(--main-bg-color);
@@ -82,7 +82,7 @@ p{
 .main-content{
   max-width: 120rem;
   margin: 0 auto;
-  padding: var(--gap);
+  padding: 8rem var(--gap);
 }
 
 /* Definindo o tamanho da seção */
@@ -157,7 +157,7 @@ p{
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
@@ -169,7 +169,7 @@ p{
 /* Definindo o tamanho e altura da imagem */
 .intro-img img{
   max-width: 100%;
-  height: auto;
+  min-height: auto;
 }
 
 /* Estilizando a seção top3 jobs */
@@ -177,7 +177,8 @@ p{
 .top3-content{
   max-width: 64rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   height: 100vh;
   text-align: center;
@@ -189,11 +190,15 @@ p{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.grid-one-content h2{
+.jobs-title h2{
   margin-bottom: 1rem;
+}
+
+.jobs-description{
+  padding-bottom: 3rem;
 }
 
 .grid {
@@ -219,4 +224,23 @@ p{
   top: -4rem;
   left: 0rem;
   transform: rotate(5deg)
+}
+
+.gallery-img{
+  width: 100%;
+  max-height: 36rem;
+  max-width: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img{
+  transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.jobs-title-gallery{
+  margin-top: 8rem;
 }
